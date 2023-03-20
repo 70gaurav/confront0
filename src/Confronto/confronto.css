@@ -86,9 +86,72 @@ header h2 {
     display: flex;
     flex-direction: column;
     width: 19%;
+   flex-wrap: wrap;
+    
 }
 .item li{
     list-style:none;
     margin-left:30px ;
     margin: 0.5rem 0;
+}
+@media screen  and (max-width:1500px){
+    .models img  {
+        height: 200px;
+        width: 200px;
+    }
+    .item img{
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+@media screen  and (max-width:1100px){
+    .models img  {
+        height: 150px;
+        width: 150px;
+    }
+    .item img{
+        height: 200px;
+        width: 200px;
+    }
+    
+}
+@media screen  and (max-width:900px){
+    .models img  {
+        height: 100px;
+        width: 100px;
+    }
+    .item img{
+        height: 150px;
+        width: 150px;
+    }
+    
+}
+@media screen  and (max-width:600px){
+    .models img  {
+        height: 50px;
+        width: 50px;
+    }
+    .mobile {
+  font-size: 15px;
+    }
+    .item img{
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+@media screen  and (max-width:420px){
+    .models img  {
+        height: 50px;
+        width: 50px;
+    }
+    .mobile {
+  font-size: 8px;
+    }
+    .item img{
+        height: 50px;
+        width: 50px;
+    }
+    
 }
