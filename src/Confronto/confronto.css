@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: red;
 }
@@ -24,8 +25,9 @@ header a{
 }
 
 .models img {
-    height: 400px;
-    width: 400px;
+    height: calc(150px + 4.5vw);
+    /* width: 400px; */
+    width: calc(150px + 4.5vw);
 }
 
 .compare {
@@ -36,6 +38,7 @@ header a{
     display: inline-block;
     margin: 1rem 0;
     border-radius: 15px;
+    width: calc(100px + 5.5vw);
 }
 
 header {
@@ -73,22 +76,84 @@ header h2 {
 .details span {
     color: red;
 }
-.comparison{
+
+.comparison {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: hidden;
 }
-.item img{
+
+.item img {
     height: 300px;
     width: 300px;
 }
-.item{
+
+.item {
     display: flex;
     flex-direction: column;
-    width: 19%;
+    width: 20%;
 }
-.item li{
-    list-style:none;
-    margin-left:30px ;
+
+.item h4 {
+    word-spacing: 3px;
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+.item li {
+    list-style: none;
+    margin-left: 30px;
     margin: 0.5rem 0;
+}
+
+
+@media screen and (max-width: 575px) {
+    .mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+
+    .models {
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 999px) {
+
+
+    .models {
+        width: 55%;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .compare {
+        width: 60%
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item
+    {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
