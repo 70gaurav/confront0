@@ -38,7 +38,7 @@ header a {
     display: inline-block;
     margin: 1rem 0;
     border-radius: 15px;
-    width: calc(100px + 5.5vw);
+    /* width: calc(100px + 5.5vw); */
 }
 
 header {
@@ -118,6 +118,9 @@ header h2 {
         align-items: center;
         /* margin: 0 auto; */
     }
+    .singleproduct{
+        flex-direction: column;
+    }
 
     .models {
         width: 85%;
@@ -127,7 +130,15 @@ header h2 {
 
 @media screen and (max-width: 999px) {
 
-
+    .singleproduct{
+        margin: 0;
+    }
+    .singleimage img{
+        width: 80%;
+    }
+    .details {
+        line-height: 2rem;
+    }
     .models {
         width: 55%;
     }

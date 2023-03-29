@@ -107,7 +107,7 @@ function Home() {
                             <h3>{element.brand}</h3>
                             <p>{element.model}</p>
                             
-                            <Link className="compare" onClick={() => {comparehandler(element)}}  >ADD TO CAMPARE</Link>
+                            <Link className="compare" onClick={() => {comparehandler(element)}}  >ADD TO COMPARE</Link>
                         </div>)
                 })
             }
