@@ -84,19 +84,23 @@ function Home() {
         async function getdata() {
             let response = await axios.get("/api/products")
             setproduct(response.data)
-            console.log(response.data)
+            // console.log(response.data)   
         }
         getdata()
     }, [])
     function clickhandler(details) {
         setsingleproduct(details)
-        console.log(singleproduct)
+        // console.log(singleproduct)
 
     }
-    function comparehandler (product) {
-        setcompare([...compare,{product}])
-        console.log(compare)
-    }
+    function comparehandler(product) {
+        const isProductAlreadyAdded = compare.filter((item) => item.product.id === product.id).length > 0;
+        if (!isProductAlreadyAdded) {
+          setcompare([...compare, { product }]);
+        }
+        // console.log(compare);
+      }
+      
     return (
         <div className='mobile'>
             {
